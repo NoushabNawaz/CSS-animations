@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+#box {
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+    position: absolute;
+    animation-name: Anime3;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.73,.73,.36,.37);
+    animation-direction: alternate-reverse;
+}
+@keyframes move {
+    from {
+        left: 0;
+    }
+    to {
+        left: 60%;
+    }
+}
+@keyframes Anime {
+    from {
+        left: 0;
+        background-color: blue;
+    }
+    to {
+        left: 60%;
+        background-color: red;
+    }
+}
+@keyframes Anime2 {
+    from {
+        left: 0;
+        background-color: blue;
+        top: 0;
+    }
+    to {
+        left: 60%;
+        background-color: red;
+        top: 55%;
+    }
+}
+@keyframes Anime3 {
+    0% {
+        left: 0;
+        background-color: blue;
+        top: 0;
+        rotate: 0deg;
+    }
+    50% {
+        left: 75%;
+        background-color: brown;
+        top: 0;
+        rotate: 360deg;
+    }
+    100% {
+        left: 70%;
+        background-color: chartreuse;
+        top: 55%;
+        rotate: 360deg;
+    }
+}
